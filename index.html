@@ -7,48 +7,111 @@
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Inter:wght@400;500;600&family=Sacramento&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="style.css">
 </head>
 
-<body>
+<body class="home-page">
 
-<div id="stars"></div>
+<div class="home-shell">
 
-<div class="container">
+<section class="hero">
+    <p class="eyebrow">A LITTLE PLACE MADE JUST FOR YOU</p>
+    <h1>Open When...</h1>
+    <p class="hero-copy">Choose what your heart needs tonight.</p>
 
-<p class="small-title">A LITTLE PLACE MADE JUST FOR YOU</p>
+    <button id="hugButton" class="hug-button">
+        <span>🫂 I Need A Hug</span>
+        <small>Tap me whenever you need one.</small>
+    </button>
 
-<h1>Open When...</h1>
+    <div id="hugMessage" class="hug-result"></div>
+</section>
 
-<p class="subtitle">Choose what your heart needs tonight.</p>
+<section class="letters-grid">
 
-<button id="hugButton">🫂 I Need A Hug — Tap Me</button>
+<a class="letter-card" href="lonely.html">
+<span class="letter-icon">🥺</span>
+<span class="card-open-when">OPEN WHEN</span>
+<span class="card-description">You Feel Lonely</span>
+</a>
 
-<div id="hugMessage"></div>
+<a class="letter-card" href="cantsleep.html">
+<span class="letter-icon">🌙</span>
+<span class="card-open-when">OPEN WHEN</span>
+<span class="card-description">You Can't Sleep</span>
+</a>
 
-<div class="letters">
+<a class="letter-card" href="grumpy.html">
+<span class="letter-icon">☀️</span>
+<span class="card-open-when">OPEN WHEN</span>
+<span class="card-description">You Wake Up Grumpy</span>
+</a>
 
-<a class="letter" href="lonely.html"><div class="seal">★</div><span>OPEN WHEN</span><p>You Feel Lonely</p></a>
-<a class="letter" href="cantsleep.html"><div class="seal">★</div><span>OPEN WHEN</span><p>You Can't Sleep</p></a>
-<a class="letter" href="grumpy.html"><div class="seal">★</div><span>OPEN WHEN</span><p>You Wake Up Grumpy</p></a>
-<a class="letter" href="missme.html"><div class="seal">★</div><span>OPEN WHEN</span><p>You Miss Me</p></a>
-<a class="letter" href="crying.html"><div class="seal">★</div><span>OPEN WHEN</span><p>You're Crying</p></a>
-<a class="letter" href="fight.html"><div class="seal">★</div><span>OPEN WHEN</span><p>We Had A Fight</p></a>
-<a class="letter" href="sad.html"><div class="seal">★</div><span>OPEN WHEN</span><p>You're Sad</p></a>
-<a class="letter" href="bored.html"><div class="seal">★</div><span>OPEN WHEN</span><p>You're Bored</p></a>
-<a class="letter" href="overthinking.html"><div class="seal">★</div><span>OPEN WHEN</span><p>You're Overthinking</p></a>
-<a class="letter" href="stillcantsleep.html"><div class="seal">★</div><span>OPEN WHEN</span><p>You Still Can't Sleep</p></a>
-<a class="letter" href="love.html"><div class="seal">★</div><span>OPEN WHEN</span><p>You Need Love</p></a>
-<a class="letter" href="reallymissme.html"><div class="seal">★</div><span>OPEN WHEN</span><p>You Really Miss Me</p></a>
+<a class="letter-card" href="missme.html">
+<span class="letter-icon">🤍</span>
+<span class="card-open-when">OPEN WHEN</span>
+<span class="card-description">You Miss Me</span>
+</a>
 
-</div>
+<a class="letter-card" href="crying.html">
+<span class="letter-icon">😢</span>
+<span class="card-open-when">OPEN WHEN</span>
+<span class="card-description">You're Crying</span>
+</a>
+
+<a class="letter-card" href="fight.html">
+<span class="letter-icon">🫂</span>
+<span class="card-open-when">OPEN WHEN</span>
+<span class="card-description">We Had A Fight</span>
+</a>
+
+<a class="letter-card" href="sad.html">
+<span class="letter-icon">🌧️</span>
+<span class="card-open-when">OPEN WHEN</span>
+<span class="card-description">You're Sad</span>
+</a>
+
+<a class="letter-card" href="bored.html">
+<span class="letter-icon">✨</span>
+<span class="card-open-when">OPEN WHEN</span>
+<span class="card-description">You're Bored</span>
+</a>
+
+<a class="letter-card" href="overthinking.html">
+<span class="letter-icon">💭</span>
+<span class="card-open-when">OPEN WHEN</span>
+<span class="card-description">You're Overthinking</span>
+</a>
+
+<a class="letter-card" href="stillcantsleep.html">
+<span class="letter-icon">🌌</span>
+<span class="card-open-when">OPEN WHEN</span>
+<span class="card-description">You Still Can't Sleep</span>
+</a>
+
+<a class="letter-card" href="love.html">
+<span class="letter-icon">❤️</span>
+<span class="card-open-when">OPEN WHEN</span>
+<span class="card-description">You Need Love</span>
+</a>
+
+<a class="letter-card" href="reallymissme.html">
+<span class="letter-icon">💌</span>
+<span class="card-open-when">OPEN WHEN</span>
+<span class="card-description">You Really Miss Me</span>
+</a>
+
+</section>
 
 <footer>Made with love, for the nights that feel a little too quiet.</footer>
 
 </div>
 
 <script src="script.js"></script>
+
+<button id="musicToggle" class="music-toggle" type="button" aria-label="Play background music">♪</button>
+<audio id="backgroundMusic" src="audio/soft-night-music.mp3" loop preload="auto"></audio>
 
 </body>
 </html>
